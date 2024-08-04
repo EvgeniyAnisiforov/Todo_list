@@ -4,8 +4,8 @@ const tasksRouter = require('./tasksRouter')
 const taskTrashesRouter = require('./taskTrashesRouter')
 const usersRouter = require('./usersRouter')
 
-router.use('/users', usersRouter)
-router.use('/tasks', tasksRouter)
-router.use('/taskTrashes', taskTrashesRouter)
+router.use('/user', usersRouter)
+router.use('/task', tasksRouter)
+router.use('/taskTrash', taskTrashesRouter)
 
 module.exports = router
