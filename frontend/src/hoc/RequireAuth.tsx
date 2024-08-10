@@ -7,7 +7,7 @@ interface TypeProps  {
 
 const RequireAuth: FC<TypeProps> = ({children}) => {
     const location = useLocation()
-    const auth = false // потом сделаю лучше
+    const auth = false // НЕ АВТОРИЗОВАН ВСЕГДА
 
     if(!auth){
         return <Navigate to='/' state={{from: location}}/>
@@ -16,3 +16,4 @@ const RequireAuth: FC<TypeProps> = ({children}) => {
     return children
 }
 export {RequireAuth}
+
