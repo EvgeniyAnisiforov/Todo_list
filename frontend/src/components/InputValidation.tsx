@@ -44,7 +44,7 @@ const InputValidation: FC<PropsInputValidation> = ({
         }
       />
       {errors[nameInput] && typeof errors[nameInput].message === "string" && (
-        <p className="text-red-500 text-xs mb-3">{errors[nameInput].message}</p>
+        <p className="text-red-500 text-xl mb-3">{errors[nameInput].message}</p>
       )}
     </>
   )
